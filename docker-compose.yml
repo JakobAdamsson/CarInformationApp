@@ -1,0 +1,18 @@
+services:
+  backend:
+    build:
+      context: .  # Use the root directory for context
+      dockerfile: backend/Dockerfile  # Path to Dockerfile inside the backend directory
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app/API  # Ensure the volume maps the backend folder correctly
+      - /run/dbus/system_bus_socket:/run/dbus/system_bus_socket
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ["/start.sh"]
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: '0.5'
