@@ -1,0 +1,60 @@
+/* General Container */
+.app-container {
+  margin: 20px auto;
+  max-width: 600px;
+  position: relative; /* Allow absolute positioning for buttons */
+}
+
+/* Title */
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Position the login and sign up buttons at the top-right */
+.toggle-buttons {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+.toggle-button {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.toggle-button:hover {
+  background-color: #45a049;
+}
+
+/* Button Group (Not needed anymore, this is for normal buttons within the same line) */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Forms and Lists */
+.service-form, .service-list {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.service-list h2 {
+  text-align: center;
+  color: #333;
+}

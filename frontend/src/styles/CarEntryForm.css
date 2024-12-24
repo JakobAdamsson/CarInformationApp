@@ -1,0 +1,112 @@
+.car-entry-form {
+  margin-top: 40px;
+  padding: 30px;
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.car-entry-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.car-entry-form h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.submit-button {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.submit-button:active {
+  background-color: #388e3c;
+}
+
+.submit-button:focus {
+  outline: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.add-car-button {
+  display: block;
+  width: 200px;
+  margin: 30px auto; /* Center button horizontally */
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-car-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.add-car-button:active {
+  background-color: #004494;
+}
+
+.add-car-button:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .car-entry-form {
+    padding: 20px;
+  }
+  .car-entry-form h2 {
+    font-size: 26px;
+  }
+}
